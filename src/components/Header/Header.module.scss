@@ -13,7 +13,6 @@
 }
 
 .headerXS {
-  display: none;
   @include mixin.xs {
     display: block;
     position: absolute;

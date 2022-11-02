@@ -33,7 +33,10 @@
 .plan {
   grid-area: plan;
   .img {
-    width: 100vw;
+    width: 100%;
+  }
+  @include mixin.sm {
+    padding: 100px 0 70px 0 !important;
   }
 }
 
@@ -43,9 +46,15 @@
     padding: 40px 40px !important;
     display: flex;
     flex-direction: column;
-
     strong {
       margin-bottom: 10px;
     }
+  }
+  @include mixin.sm {
+    padding: 40px 40px !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 }
