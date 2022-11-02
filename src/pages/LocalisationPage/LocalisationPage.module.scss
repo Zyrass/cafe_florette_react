@@ -1,0 +1,33 @@
+.localisation {
+  display: grid;
+  grid-template-areas:
+    "h1 h1"
+    "plan adresse";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 180px 1fr;
+  grid-column-gap: 20px;
+}
+
+.h1 {
+  grid-area: h1;
+  font-size: calc(50px + 1vmin);
+  font-family: var(--font-title);
+}
+
+.h2 {
+  font-size: calc(25px + 1vmin);
+  font-family: var(--font-title);
+}
+
+.plan {
+  grid-area: plan;
+  .img {
+    width: 550px;
+    border: var(--border-2);
+    box-shadow: var(--box-shadow);
+  }
+}
+
+.adresse {
+  grid-area: adresse;
+}

@@ -86,3 +86,10 @@ ul {
 button[disabled] {
   cursor: not-allowed;
 }
+
+mark {
+  padding: 5px 10px;
+  background-color: var(--theme-primary);
+  color: var(--theme-primary-text);
+  border-radius: 4px;
+}
