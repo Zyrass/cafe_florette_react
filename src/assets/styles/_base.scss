@@ -82,3 +82,7 @@ footer {
 ul {
   list-style: none;
 }
+
+button[disabled] {
+  cursor: not-allowed;
+}

@@ -241,16 +241,16 @@
       align-items: baseline;
     }
     &-unset {
-      justify-items: unset;
+      align-items: unset;
     }
     &-center {
-      justify-items: center;
+      align-items: center;
     }
     &-start {
-      justify-items: flex-start;
+      align-items: flex-start;
     }
     &-end {
-      justify-items: flex-end;
+      align-items: flex-end;
     }
     &-stretch {
       justify-items: stretch;
@@ -267,22 +267,22 @@
       align-self: baseline;
     }
     &-center {
-      justify-self: center;
+      align-self: center;
     }
     &-start {
-      justify-self: flex-start;
+      align-self: flex-start;
     }
     &-end {
-      justify-self: flex-end;
+      align-self: flex-end;
     }
     &-stretch {
-      justify-self: stretch;
+      align-self: stretch;
     }
     &-initial {
-      justify-self: initial;
+      align-self: initial;
     }
     &-unset {
-      justify-self: unset;
+      align-self: unset;
     }
   }
 }
