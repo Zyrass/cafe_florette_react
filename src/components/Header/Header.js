@@ -3,10 +3,10 @@ import { NavLink } from "react-router-dom";
 function Header() {
   return (
     <header>
+      <span>
+        <NavLink to="/">CAFE FLORETTE</NavLink>
+      </span>
       <nav>
-        <span>
-          <NavLink to="/">CAFE FLORETTE</NavLink>
-        </span>
         <ul>
           <li>
             <NavLink to="/">Accueil</NavLink>

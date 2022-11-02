@@ -1,6 +1,6 @@
 function ContactPage() {
   return (
-    <div>
+    <div className="container debug-1">
       <h1>Contactez-nous</h1>
       <h2>Vous avez une question ou une remarque ?</h2>
       <section>

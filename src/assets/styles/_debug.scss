@@ -3,3 +3,22 @@
  * Copyright 2022-2030 Zyrass (Alain Guillon Author)
  * Inspirated by Bootstrap and Dyma
  */
+
+// debug
+.debug {
+  &-1 {
+    border: 1px solid peru;
+  }
+  &-2 {
+    border: 1px solid olive;
+  }
+  &-3 {
+    border: 1px solid indigo;
+  }
+  &-4 {
+    border: 1px solid teal;
+  }
+  &-5 {
+    border: 1px solid firebrick;
+  }
+}

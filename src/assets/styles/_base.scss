@@ -3,3 +3,83 @@
  * Copyright 2022-2030 Zyrass (Alain Guillon Author)
  * Inspirated by Bootstrap and Dyma
  */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  min-height: 100vh;
+  display: grid;
+  grid-template-areas: "header" "content" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 54px 1fr 54px;
+}
+
+header {
+  grid-area: header;
+  background-color: var(--theme-secondary);
+  color: var(--theme-secondary-text);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    padding-left: 25px;
+    a {
+      color: var(--theme-secondary-text);
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+      align-items: inherit;
+
+      li {
+        height: 54px;
+
+        a {
+          display: flex;
+          align-items: center;
+          padding: 0 20px;
+          height: 100%;
+          text-decoration: none;
+          color: var(--bg-white);
+          transition: background-color 0.2s;
+          &:hover {
+            background-color: var(--theme-primary);
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+.content {
+  grid-area: "content";
+  background-color: var(--theme-primary);
+  padding: 50px;
+}
+
+footer {
+  grid-area: "footer";
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  background-color: var(--theme-secondary);
+  color: var(--theme-secondary-text);
+}
+
+ul {
+  list-style: none;
+}

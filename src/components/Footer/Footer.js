@@ -1,5 +1,10 @@
 function Footer() {
-  return <h1>Footer</h1>;
+  return (
+    <footer>
+      <span>Copyrigth &copy; - 2022/2023</span>
+      <span>By Alain GUILLON</span>
+    </footer>
+  );
 }
 
 export default Footer;

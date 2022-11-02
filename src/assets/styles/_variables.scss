@@ -5,13 +5,57 @@
  */
 
 :root {
-  // color
-  // background-color
   // font-family
-  
+  --font-family: "";
+
+  // color
+  --primary: #353b48;
+  --secondary: #2f3640;
+
+  --dark: #2f3640;
+  --white: #f5f6fa;
+  --gray-1: #7f8fa6;
+  --gray-2: #718093;
+
+  --info: #487eb0;
+  --success: #44bd32;
+  --danger: #c23616;
+  --warning: #e1b12c;
+
+  // background-color
+  --bg-primary: var(--primary);
+  --bg-secondary: var(--secondary);
+  --bg-dark: var(--dark);
+  --bg-white: var(--white);
+  --bg-gray-1: var(--gray-1);
+  --bg-gray-2: var(--gray-2);
+  --bg-info: var(--info);
+  --bg-success: var(--success);
+  --bg-danger: var(--danger);
+  --bg-warning: var(--warning);
+
+  // container
+  --container-size-max: 992px;
+
   // box-shadow
   --box-shadow: 0 6px 9px 0 rgb(0 0 0 / 15%);
   --box-shadow-nav: rgb(0 0 0 / 22%) 0px 2px 18px 0px;
 
+  // border
+  --border-0: none;
+  --border-1: 1px solid var(--bg-dark);
+  --border-2: 2px solid var(--bg-dark);
+
+  // gap
+  --row-gap: 5px;
+  --column-gap: 5px;
+
+  // card
+  --card-size: fit-content;
+
   // theme
+  --theme-primary: var(--primary);
+  --theme-primary-text: var(--white);
+  --theme-secondary: var(--secondary);
+  --theme-secondary-text: var(--white);
 }
