@@ -2,6 +2,7 @@
 
 
 .contactPage {
+  overflow: hidden;
   @include mixin.xs {
     max-width: 100vw;
   }

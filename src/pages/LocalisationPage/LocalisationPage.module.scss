@@ -1,33 +1,51 @@
+@use "../../assets/styles/mixins" as mixin;
+
 .localisation {
-  display: grid;
   grid-template-areas:
-    "h1 h1"
-    "plan adresse";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 180px 1fr;
-  grid-column-gap: 20px;
+    "h1"
+    "plan"
+    "adresse";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 1fr;
+  grid-row-gap: 20px;
+  width: 100%;
+  padding: 50px 0;
 }
 
 .h1 {
   grid-area: h1;
   font-size: calc(50px + 1vmin);
   font-family: var(--font-title);
+  color: var(--theme-secondary);
+  @include mixin.xs {
+    font-size: calc(25px + 1vmin);
+    width: 100vw;
+  }
 }
 
 .h2 {
   font-size: calc(25px + 1vmin);
   font-family: var(--font-title);
+  padding-top: 25px;
+  text-align: center;
 }
 
 .plan {
   grid-area: plan;
   .img {
-    width: 550px;
-    border: var(--border-2);
-    box-shadow: var(--box-shadow);
+    width: 100vw;
   }
 }
 
 .adresse {
   grid-area: adresse;
+  @include mixin.xs {
+    padding: 40px 40px !important;
+    display: flex;
+    flex-direction: column;
+
+    strong {
+      margin-bottom: 10px;
+    }
+  }
 }
