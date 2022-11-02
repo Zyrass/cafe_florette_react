@@ -72,6 +72,7 @@
 .container {
   max-width: var(--container-size-max);
   margin: 0 auto;
+  box-shadow: var(--box-shadow);
   &-fluid {
     width: 100vw;
   }
@@ -477,6 +478,10 @@
 }
 // margin-right & margin-left
 .mx {
+  &-auto {
+    margin-right: auto;
+    margin-left: auto;
+  }
   &-5 {
     margin-right: 5px;
     margin-left: 5px;
@@ -1159,6 +1164,7 @@
   box-shadow: var(--box-shadow);
   width: var(--card-size);
   border: var(--border-1);
+  background-color: var(--bg-white);
 
   &-header {
     padding: 10px 20px;
@@ -1179,5 +1185,64 @@
   }
 }
 
+// background-color
+.bg {
+  &-transparent {
+    background-color: transparent;
+  }
+  &-primary {
+    background-color: var(--theme-primary);
+  }
+  &-secondary {
+    background-color: var(--theme-secondary);
+  }
+  &-info {
+    background-color: var(--bg-info);
+  }
+  &-success {
+    background-color: var(--bg-success);
+  }
+  &-warning {
+    background-color: var(--bg-warning);
+  }
+  &-danger {
+    background-color: var(--bg-danger);
+  }
+  &-white {
+    background-color: var(--bg-white);
+  }
+}
+
 // button
+.btn {
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 700;
+  border-radius: 4px;
+  &:hover {
+    box-shadow: var(--box-shadow);
+  }
+  &-small {
+    padding: 5px;
+  }
+  &-info {
+    background-color: var(--bg-info);
+  }
+  &-success {
+    background-color: var(--bg-success);
+  }
+  &-warning {
+    background-color: var(--bg-warning);
+  }
+  &-danger {
+    background-color: var(--bg-danger);
+  }
+  &-primary {
+    background-color: var(--theme-primary);
+    color: var(--theme-primary-text);
+    &:hover {
+      background-color: var(--theme-secondary);
+    }
+  }
+}
 // calque transparent (pour menu)
