@@ -1,4 +1,33 @@
+@use "../../assets/styles/mixins" as mixin;
+
+
+.contactPage {
+  @include mixin.xs {
+    max-width: 100vw;
+  }
+
+  textarea {
+    height: 150px;
+  }
+}
+
 .h1 {
   font-size: calc(50px + 1vmin);
   font-family: var(--font-title);
+  padding-top: 60px;
+  @include mixin.xs {
+    font-size: calc(25px + 1vmin);
+  }
+}
+
+.sectionBTN {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mixin.xs {
+    flex-direction: column;
+    button {
+      margin-bottom: 20px;
+    }
+  }
 }

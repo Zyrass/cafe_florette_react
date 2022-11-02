@@ -3,10 +3,10 @@ import styles from "./Contact.module.scss";
 function ContactPage() {
 
   return (
-    <div className="container mt-30 px-40 pb-30 bg-white">
-      <h1 className={`upper pt-30 my-30 ${styles.h1}`}>Contactez-nous</h1>
+    <div className={`px-40 pb-30 bg-white ${styles.contactPage}`}>
+      <h1 className={`upper ${styles.h1}`}>Contactez-nous</h1>
       <h2>Vous avez une question ou une remarque ?</h2>
-      <section className="py-40 px-40">
+      <section className="py-40">
         <div className="d-flex flex-column mb-20">
           <span className="mb-5">Nom</span>
           <input
@@ -32,10 +32,10 @@ function ContactPage() {
           />
         </div>
         <hr className="my-50 w-50 mx-auto" />
-        <div className="d-flex justify-content-center align-items-center">
+        <div className={styles.sectionBTN}>
           <button
             type="button"
-            className="upper btn btn-primary w-40 mr-25"
+            className="upper btn btn-primary w-50 "
             disabled
           >
             Soumettre
