@@ -11,17 +11,16 @@ function HomePage() {
         className={`${styles.presentation}`}
         style={{
           backgroundImage: `url( ${cover} )`,
+          backgroundSize: "cover",
           filter: "contrast(160%)",
         }}
       >
-        <h1 className="pt-80 w-70 upper">
-          Toute l'expertise française dans un café
-        </h1>
-        <hr className="my-100 w-80 mx-auto" />
-        <p className="w-60 mx-auto pb-100">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate
-          quasi eaque fuga, voluptate magni voluptatum nihil quis deleniti
-          dicta, soluta voluptatibus est assumenda in quisquam dolores ?
+        <h1>Toute l'expertise française dans un café</h1>
+        <hr className="mb-40 w-80 mx-auto" />
+        <p className="mx-auto">
+          Projet créé dans le but de travailler la technologie React. Avant tout
+          il s'agit d'un projet HTML/CSS de la plateforme Dyma.fr repris 100%
+          par mes soins.
         </p>
         <Link to="/localisation" class="btn btn-primary">
           DECOUVRIR
@@ -29,43 +28,39 @@ function HomePage() {
       </section>
 
       <section className={`${styles.features} bg-white`}>
-        <div className="mr-50">
+        <div>
           <i className="d-flex justify-content-center fas fa-coffee fa-3x"></i>
           <h2 className="my-20 upper d-flex justify-content-center">
             Un nouveau café par jour
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            ut ullamcorper quam. Maecenas vitae purus id diam tempor
-            pellentesque vel ac ex. Phasellus molestie, odio quis pharetra
-            convallis, nibh ex cursus justo, vel hendrerit nibh metus non
-            libero. Proin tincidunt felis ut ligula luctus, sit amet malesuada
-            purus tincidunt. Suspendisse dapibus bibendum velit, a volutpat nunc
-            tincidunt ut. Aenean blandit erat eu molestie sodales. Sed ornare
-            fringilla purus, id fermentum ipsum sagittis nec.
+            Chez Café Florette, nous sommes les seuls au monde à concevoir un
+            café unique par jour. Il y en a pour tout les goûts et l'avantage
+            c'est que vous allez forcément vouloir en savoir plus sur le café du
+            moment. ainsi vous allez pouvoir partager autour d'un arrôme
+            différent et amélioré votre productivité... Nous en sommes certain !
           </p>
         </div>
 
-        <div className="ml-50">
+        <div>
           <i class="d-flex justify-content-center fas fa-clock fa-3x"></i>
           <h2 className="my-20 upper d-flex justify-content-center ">
             Ouvert 24h/24 7j/7
           </h2>
           <p>
-            Fusce tincidunt odio at elementum vehicula. Aenean aliquet mollis
-            massa ac commodo. Phasellus pellentesque augue vulputate, vehicula
-            odio ac, ullamcorper est. Praesent scelerisque tincidunt vehicula.
-            In eget mollis nisi, non feugiat ipsum. Ut pellentesque est vitae
-            velit tristique, vel posuere dui fringilla. Vestibulum ac lacus quis
-            tellus luctus bibendum a ut sapien. Ut vulputate justo ante. Donec
-            consectetur lectus nunc, sit amet convallis sapien pretium eu.
-            Mauris quis fringilla justo.
+            Notre équipe est constamment disponible, ils nous arrivent de dormir
+            c'est vrai mais pour nos clients, ous avons mis au point un
+            calendrier en interne pour toutes nos équipes afin de pouvoir
+            maintenir ce superbe café ouvert 24 heures sur 24 et surtout 7 jours
+            sur 7 et il en va de même pour les jours férier que ce soit le 1er
+            mai ou bien à Noël ou le jour de l'an, nous sommes là et toujours là
+            !!
           </p>
         </div>
       </section>
 
       <section
-        className={`${styles.imgSeparated}`}
+        className={`${styles.imgSeparated} w-100`}
         style={{
           backgroundImage: `url( ${cafe3} )`,
           backgroundSize: "cover",
@@ -76,7 +71,7 @@ function HomePage() {
 
       <section className={`${styles.reservation} bg-white`}>
         <h2>Réservez dès maintenant</h2>
-        <p className="w-50 my-70">
+        <p className="w-80 my-70">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae
           nesciunt odit dicta nihil exercitationem quod enim aut expedita
           molestias repellendus in vero ullam perferendis, temporibus dolorum

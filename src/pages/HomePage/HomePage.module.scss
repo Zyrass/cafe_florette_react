@@ -1,3 +1,5 @@
+@use "../../assets/styles/mixins" as mixin;
+
 .home {
   display: grid;
   grid-template-areas:
@@ -7,6 +9,9 @@
     "reservation";
   grid-template-columns: 1fr;
   grid-template-rows: 750px 400px 650px 500px;
+  @include mixin.xs {
+    grid-template-rows: 1000px 850px 650px 700px;
+  }
 
   .presentation {
     grid-area: presentation;
@@ -16,12 +21,6 @@
     justify-content: center;
     border-bottom: 4px solid var(--theme-primary);
 
-    h1 {
-      font-size: calc(40px + 1vmin);
-      color: var(--theme-primary-text);
-      text-shadow: 2px 2px 6px var(--primary);
-      text-align: center;
-    }
     hr {
       border-color: var(--theme-primary);
       border: 2px solid;
@@ -29,10 +28,27 @@
 
     p {
       font-size: 18px;
+      padding: 20px;
       letter-spacing: 2px;
       font-style: italic;
       text-shadow: 2px 2px 2px var(--theme-primary);
       color: var(--theme-primary-text);
+      position: relative;
+      width: 70%;
+      margin-bottom: 40px;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-color: var(--theme-primary);
+        opacity: 0.5;
+        box-shadow: var(--box-shadow);
+        border-radius: 4px;
+      }
     }
     a {
       display: block;
@@ -45,7 +61,18 @@
   .features {
     grid-area: features;
     display: flex;
-    padding: 80px 50px;
+    padding: 0 50px;
+    @include mixin.xs {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      div {
+        &:first-child {
+          margin-bottom: 90px;
+        }
+      }
+    }
     p {
       text-align: justify;
     }
