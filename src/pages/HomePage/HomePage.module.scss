@@ -1,0 +1,81 @@
+.home {
+  display: grid;
+  grid-template-areas:
+    "presentation "
+    "features"
+    "img"
+    "reservation";
+  grid-template-columns: 1fr;
+  grid-template-rows: 750px 400px 650px 500px;
+
+  .presentation {
+    grid-area: presentation;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px solid var(--theme-primary);
+
+    h1 {
+      font-size: calc(40px + 1vmin);
+      color: var(--theme-primary-text);
+      text-shadow: 2px 2px 6px var(--primary);
+      text-align: center;
+    }
+    hr {
+      border-color: var(--theme-primary);
+      border: 2px solid;
+    }
+
+    p {
+      font-size: 18px;
+      letter-spacing: 2px;
+      font-style: italic;
+      text-shadow: 2px 2px 2px var(--theme-primary);
+      color: var(--theme-primary-text);
+    }
+    a {
+      display: block;
+      width: fit-content;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+
+  .features {
+    grid-area: features;
+    display: flex;
+    padding: 80px 50px;
+    p {
+      text-align: justify;
+    }
+  }
+
+  .imgSeparated {
+    grid-area: img;
+    border-top: 4px solid var(--theme-primary);
+    border-bottom: 4px solid var(--theme-primary);
+  }
+
+  .reservation {
+    grid-area: reservation;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: calc(40px + 1vmin);
+      color: var(--theme-secondary);
+      text-shadow: 2px 2px 6px var(--theme-secondary);
+      text-align: center;
+    }
+
+    p {
+      letter-spacing: 2px;
+      word-spacing: 2px;
+      font-size: 16px;
+      text-shadow: 1px 1px 1px var(--theme-secondary);
+    }
+  }
+}
