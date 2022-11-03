@@ -1,10 +1,14 @@
+// dependencies
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
-import "./assets/styles/index.scss";
-import reportWebVitals from "./reportWebVitals";
-
 import { router } from "./routes/router";
+
+// scss
+import "./assets/styles/index.scss";
+
+// test
+import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
