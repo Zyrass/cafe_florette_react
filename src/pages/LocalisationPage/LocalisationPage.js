@@ -1,14 +1,17 @@
+// dependencies
+import Alert from "./Alert/Alert";
+
 // scss
 import styles from "./LocalisationPage.module.scss";
 
-// images
+// image café-2
 import imgLocalisation from "../../assets/images/cafe2.png";
 
 function LocalisationPage() {
   return (
-    <div className={`bg-white ${styles.localisation}`}>
-      <h1 className={`upper ${styles.h1}`}>Localisation</h1>
-      <section className={`${styles.plan}`}>
+    <div className={styles.localisation}>
+      <h1>Localisation</h1>
+      <section className={styles.plan}>
         <img
           className={styles.img}
           style={{
@@ -19,27 +22,22 @@ function LocalisationPage() {
         />
       </section>
 
-      <section className="adresse">
+      <section>
         <h2 className={styles.h2}>Où nous trouver</h2>
         <hr className="w-60 mx-auto my-30" />
 
-        <div className="alert w-90 mx-auto mb-20">
-          <p className="d-flex align-items-center justify-content-between w-100">
-            <strong>
-              <mark>Métro ligne 4</mark>
-            </strong>
-            <span>Odéon</span>
-          </p>
-        </div>
-
-        <div className="alert w-90 mx-auto mb-20">
-          <p className="d-flex align-items-center justify-content-between w-100">
-            <strong>
-              <mark>Métro ligne 11</mark>
-            </strong>
-            <span>Mabillon</span>
-          </p>
-        </div>
+        <Alert
+          key="3145321-1564832183"
+          typeAlert="normal"
+          ligne={4}
+          name="Odéon"
+        />
+        <Alert
+          key="4565891-1235981255"
+          typeAlert="normal"
+          ligne={11}
+          name="Mabillon"
+        />
 
         <address className={styles.adresse}>
           <strong>Adresse:</strong>

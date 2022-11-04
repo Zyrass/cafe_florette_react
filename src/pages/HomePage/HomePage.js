@@ -19,7 +19,7 @@ function HomePage() {
           filter: "contrast(160%)",
         }}
       >
-        <h1>Toute l'expertise française dans un café</h1>
+        <h1 className="text-white">Toute l'expertise française dans un café</h1>
         <hr className="mb-40 w-80 mx-auto" />
         <p className="mx-auto">
           Projet créé dans le but de travailler la technologie React. Avant tout
@@ -35,14 +35,15 @@ function HomePage() {
         <div>
           <i className="d-flex justify-content-center fas fa-coffee fa-3x"></i>
           <h2 className="my-20 upper d-flex justify-content-center">
-            Un nouveau café par jour
+            Un café par jour
           </h2>
           <p>
             Chez Café Florette, nous sommes les seuls au monde à concevoir un
-            café unique par jour. Il y en a pour tout les goûts et l'avantage
-            c'est que vous allez forcément vouloir en savoir plus sur le café du
-            moment. ainsi vous allez pouvoir partager autour d'un arrôme
-            différent et amélioré votre productivité... Nous en sommes certain !
+            café unique par jour. Il y en a pour tous les goûts et l'avantage
+            c'est que vous allez forcément vouloir en savoir plus sur le café dû
+            moment. ainsi vous allez pouvoir partager autour d'un arôme
+            différent et amélioré votre productivité... Nous en sommes certains
+            !
           </p>
         </div>
 
@@ -53,10 +54,10 @@ function HomePage() {
           </h2>
           <p>
             Notre équipe est constamment disponible, ils nous arrivent de dormir
-            c'est vrai mais pour nos clients, ous avons mis au point un
+            c'est vrai mais pour nos clients, nous avons mis au point un
             calendrier en interne pour toutes nos équipes afin de pouvoir
             maintenir ce superbe café ouvert 24 heures sur 24 et surtout 7 jours
-            sur 7 et il en va de même pour les jours férier que ce soit le 1er
+            sur 7 et il en va de même pour les jours février que ce soit le 1er
             mai ou bien à Noël ou le jour de l'an, nous sommes là et toujours là
             !!
           </p>

@@ -1052,7 +1052,7 @@
   display: flex;
   align-items: center;
   font-weight: 100;
-  padding: 10px 15px;
+  padding: 20px 15px;
   min-width: fit-content;
   min-height: 100%;
   letter-spacing: 0.8px;
@@ -1143,6 +1143,9 @@
   }
   &-danger {
     color: var(--danger);
+  }
+  &-white {
+    color: var(--white);
   }
 
   // decoration
