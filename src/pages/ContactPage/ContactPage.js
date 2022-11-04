@@ -30,15 +30,14 @@ function ContactPage() {
         <div className={styles.sectionBTN}>
           <button
             type="button"
-            className="upper btn btn-primary w-50 "
+            className="upper btn btn-primary"
             disabled
           >
             Soumettre
           </button>
           <em className="text-muted">
             Il est donc inutile de l'utiliser ou de modifier son attribut{" "}
-            <strong>disabled</strong>.<br />
-            Le formulaire n'est pas câblé et donc il ne fera strictement rien.
+            <strong>disabled</strong>. Le formulaire n'est pas câblé et donc il ne fera strictement rien.
           </em>
         </div>
       </section>

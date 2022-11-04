@@ -76,6 +76,7 @@ header {
 
   i {
     display: none !important;
+    cursor: pointer;
     @include mixin.xs {
       display: block !important;
     }
@@ -125,6 +126,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-title-hx);
+  text-align: center;
 }
 
 ul {

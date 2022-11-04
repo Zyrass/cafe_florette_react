@@ -55,7 +55,7 @@
 
 // extra large 1200+
 @mixin xl {
-  @media (max-width: 1201px) {
+  @media (min-width: 1201px) {
     @content;
   }
 }
