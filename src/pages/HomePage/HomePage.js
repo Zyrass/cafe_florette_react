@@ -1,5 +1,5 @@
 // dependencies
-import { Link } from "react-router-dom";
+import { Link, redirect } from "react-router-dom";
 
 // scss
 import styles from "./HomePage.module.scss";
@@ -27,13 +27,13 @@ function HomePage() {
           par mes soins.
         </p>
         <div>
-          <Link
-            to="https://cafe-florette-zyrass.netlify.app/"
+          <a
             className="btn btn-primary"
             target="_blank"
+            href="https://cafe-florette-zyrass.netlify.app/"
           >
             PROJECT BY DYMA
-          </Link>
+          </a>
           <Link to="/localisation" className="btn btn-primary-reverse">
             LOCALISATION
           </Link>
