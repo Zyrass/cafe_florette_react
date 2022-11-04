@@ -1,7 +1,7 @@
+// scss
 import styles from "./Contact.module.scss";
 
 function ContactPage() {
-
   return (
     <div className={`px-40 pb-30 bg-white ${styles.contactPage}`}>
       <h1 className={`upper ${styles.h1}`}>Contactez-nous</h1>

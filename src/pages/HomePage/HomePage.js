@@ -1,6 +1,10 @@
+// dependencies
 import { Link } from "react-router-dom";
+
+// scss
 import styles from "./HomePage.module.scss";
 
+// images
 import cover from "../../assets/images/cafe1.jpg";
 import cafe3 from "../../assets/images/cafe3.jpg";
 
@@ -22,7 +26,7 @@ function HomePage() {
           il s'agit d'un projet HTML/CSS de la plateforme Dyma.fr repris 100%
           par mes soins.
         </p>
-        <Link to="/localisation" class="btn btn-primary">
+        <Link to="/localisation" className="btn btn-primary">
           DECOUVRIR
         </Link>
       </section>
@@ -43,7 +47,7 @@ function HomePage() {
         </div>
 
         <div>
-          <i class="d-flex justify-content-center fas fa-clock fa-3x"></i>
+          <i className="d-flex justify-content-center fas fa-clock fa-3x"></i>
           <h2 className="my-20 upper d-flex justify-content-center ">
             Ouvert 24h/24 7j/7
           </h2>

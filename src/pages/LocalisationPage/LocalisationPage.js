@@ -1,4 +1,7 @@
+// scss
 import styles from "./LocalisationPage.module.scss";
+
+// images
 import imgLocalisation from "../../assets/images/cafe2.png";
 
 function LocalisationPage() {
@@ -23,7 +26,7 @@ function LocalisationPage() {
         <div className="alert w-90 mx-auto mb-20">
           <p className="d-flex align-items-center justify-content-between w-100">
             <strong>
-            <mark>Métro ligne 4</mark>
+              <mark>Métro ligne 4</mark>
             </strong>
             <span>Odéon</span>
           </p>
@@ -32,7 +35,7 @@ function LocalisationPage() {
         <div className="alert w-90 mx-auto mb-20">
           <p className="d-flex align-items-center justify-content-between w-100">
             <strong>
-            <mark>Métro ligne 11</mark>
+              <mark>Métro ligne 11</mark>
             </strong>
             <span>Mabillon</span>
           </p>
