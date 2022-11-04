@@ -31,6 +31,7 @@ function HomePage() {
             className="btn btn-primary"
             target="_blank"
             href="https://cafe-florette-zyrass.netlify.app/"
+            rel="noopener"
           >
             PROJECT BY DYMA
           </a>
