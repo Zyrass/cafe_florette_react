@@ -10,13 +10,13 @@ import cafe3 from "../../assets/images/cafe3.jpg";
 
 function HomePage() {
   return (
-    <div className={`${styles.home}`}>
+    <div className={`${styles.homePage}`}>
       <section
         className={`${styles.presentation}`}
         style={{
           backgroundImage: `url( ${cover} )`,
           backgroundSize: "cover",
-          filter: "contrast(160%)",
+          filter: "contrast(200%)",
         }}
       >
         <h1 className="text-white">Toute l'expertise française dans un café</h1>
@@ -26,9 +26,18 @@ function HomePage() {
           il s'agit d'un projet HTML/CSS de la plateforme Dyma.fr repris 100%
           par mes soins.
         </p>
-        <Link to="/localisation" className="btn btn-primary">
-          DECOUVRIR
-        </Link>
+        <div>
+          <Link
+            to="https://cafe-florette-zyrass.netlify.app/"
+            className="btn btn-primary"
+            target="_blank"
+          >
+            PROJECT BY DYMA
+          </Link>
+          <Link to="/localisation" className="btn btn-primary-reverse">
+            LOCALISATION
+          </Link>
+        </div>
       </section>
 
       <section className={`${styles.features} bg-white`}>

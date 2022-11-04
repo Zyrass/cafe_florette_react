@@ -1245,5 +1245,13 @@
     &:hover {
       background-color: var(--theme-secondary);
     }
+    &-reverse {
+      background-color: var(--theme-primary-text);
+      color: var(--theme-primary);
+      &:hover {
+        background-color: var(--theme-primary);
+        color: var(--theme-primary-text);
+      }
+    }
   }
 }
