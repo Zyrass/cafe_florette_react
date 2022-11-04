@@ -25,6 +25,13 @@
   }
 }
 
+// small and gretter than 577
+@mixin sm-gt {
+  @media (min-width: 577px) {
+    @content;
+  }
+}
+
 // medium 769 992
 @mixin md {
   @media (min-width: 769px) and (max-width: 992px) {
@@ -39,6 +46,13 @@
   }
 }
 
+// medium and gretter than 769px
+@mixin md-gt {
+  @media (min-width: 769px) {
+    @content;
+  }
+}
+
 // large 993 1200
 @mixin lg {
   @media (min-width: 993px) and (max-width: 1200px) {
@@ -49,6 +63,13 @@
 // large and lower than 1200
 @mixin lg-lt {
   @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+// large and gretter than 993px
+@mixin lg-gt {
+  @media (min-width: 993px) {
     @content;
   }
 }
