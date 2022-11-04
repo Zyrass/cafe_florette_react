@@ -14,7 +14,8 @@ function Header() {
 
   return (
     <header>
-      <span>
+      <span className="pl-20">
+        <i className="fas fa-coffee pr-10"></i>
         <NavLink to="/">CAFE FLORETTE</NavLink>
       </span>
       <nav>

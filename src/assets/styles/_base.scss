@@ -34,7 +34,11 @@ header {
   position: relative;
 
   span {
-    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    i {
+      padding-left: 20px;
+    }
     a {
       color: var(--theme-secondary-text);
       text-decoration: none;
