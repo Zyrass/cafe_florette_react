@@ -1,5 +1,5 @@
 // dependencies
-import { Link, redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // scss
 import styles from "./HomePage.module.scss";
